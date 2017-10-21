@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sliding Puzzle</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div class="main_body">
+		<div class="game_body">
+			<div class="inner_body">
+				<div class="first_row">
+					<div id="z0" class="tile" data-y = "0" data-x ="0" onclick="clickTile(this)"><span>6</span></div>
+					<div id="z1" class="tile" data-y = "0" data-x ="1" onclick="clickTile(this)"><span>4</span></div>
+					<div id="z2" class="tile" data-y = "0" data-x ="2" onclick="clickTile(this)"><span>7</span></div>
+				</div>
+				<div class="second_row">
+					<div id="z3" class="tile" data-y = "1" data-x ="0" onclick="clickTile(this)"><span>8</span></div>
+					<div id="z4" class="tile" data-y = "1" data-x ="1" onclick="clickTile(this)"><span>5</span></div>
+					<div id="z5" class="tile"  data-y = "1" data-x ="2" onclick="clickTile(this)"><span></span></div>
+				</div>
+				<div class="third_row">
+					<div id="z6" class="tile" data-y = "2" data-x ="0" onclick="clickTile(this)"><span>3</span></div>
+					<div id="z7" class="tile" data-y = "2" data-x ="1" onclick="clickTile(this)"><span>2</span></div>
+					<div id="z8" class="tile" data-y = "2" data-x ="2" onclick="clickTile(this)"><span>1</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="stats"><span>Game Stats</span><br><br>
+		<p>Moves: <span id="moves"></span> </p>
+		<p>Start time: <span id="start_time"></span></p>
+		<p> <span id="end_time"></span></p>
+		<button id="restart_game" onclick="window.location.reload()"> Restart Game </button>
+	</div>
+	<script type="text/javascript" src="slide_puzzle.js"></script>
+</body>
+</html>
